@@ -1,0 +1,19 @@
+[package]
+name = "iperf4"
+version = "0.1.0"
+authors = ["Ahmed Farghal <me@asoli.dev>"]
+repository = "https://github.com/AhmedSoliman/iperf4"
+license = "MIT OR Apache-2.0"
+keywords = ["network", "performance", "iperf"]
+categories = ["command-line-utilities", "simulation"]
+edition = "2021"
+
+[dependencies]
+anyhow = "1.0"
+thiserror = "1.0"
+env_logger = "0.11"
+log = "0.4"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+clap = { version = "4", features = ["color", "derive"] }
+clap-verbosity-flag = "2.2"
